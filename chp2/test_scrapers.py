@@ -5,7 +5,7 @@ from chp2.all_scrapers import re_scraper, bs_scraper, \
 from chp1.advanced_link_crawler import download
 
 NUM_ITERATIONS = 1000  # number of times to test each scraper
-html = download('http://example.python-scraping.com/places/view/United-Kingdom-233')
+html = download('http://example.python-scraping.com/view/United-Kingdom-233')
 
 scrapers = [
     ('Regular expressions', re_scraper),
