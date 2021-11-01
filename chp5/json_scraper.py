@@ -1,5 +1,8 @@
 import requests
 import string
+import os
+os.environ["http_proxy"] = "http://192.168.5.1:7890"
+os.environ["https_proxy"] = "http://192.168.5.1:7890"
 
 PAGE_SIZE = 10
 

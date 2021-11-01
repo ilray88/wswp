@@ -14,6 +14,7 @@ except ImportError:
 import lxml.html
 
 
+
 class BrowserRender(QWebView):
     def __init__(self, display=True):
         self.app = QApplication([])
@@ -37,7 +38,7 @@ class BrowserRender(QWebView):
             return self.html()
         else:
             # timed out
-            print 'Request timed out:', url
+            print('Request timed out:', url)
 
     def html(self):
         """Shortcut to return the current HTML"""
