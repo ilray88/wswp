@@ -22,7 +22,7 @@ class BrowserRender(QWebView):
         if display:
             self.show() # show the browser
 
-    def open(self, url, timeout=60):
+    def download(self, url, timeout=60):
         """Wait for download to complete and return result"""
         loop = QEventLoop()
         timer = QTimer()
