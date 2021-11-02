@@ -11,7 +11,7 @@ print(dealers.keys())
 print(dealers['count'])
 print(dealers['data']['pois'][0])
 
-with open('../../data/bmw.csv', 'w') as fp:
+with open(r'D:\0ilraypan\git_jia\《用Python写网络爬虫2》\data\bmw.csv', 'w',encoding=('utf-8')) as fp:
     writer = csv.writer(fp)
     writer.writerow(['Name', 'Latitude', 'Longitude'])
     for dealer in dealers['data']['pois']:

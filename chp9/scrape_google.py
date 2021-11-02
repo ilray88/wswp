@@ -5,7 +5,7 @@ from lxml.html import fromstring
 # get results from search
 html = requests.get('https://www.google.com/search?q=test')
 tree = fromstring(html.content)
-results = tree.cssselect('h3.r a')
+results = tree.cssselect('a')
 print(results)
 
 # grab the first link
